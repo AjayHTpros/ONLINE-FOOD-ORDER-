@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.jpeg" alt="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ORDER</a></li>
+                    <li><a href="">CONTACTS</a></li>
+                    <li><a href="">ABOUT</a></li>
+
+                </ul>
+            </nav>
+            <img src="menu.png" alt="menu icon"
+            onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h2>BEST QUALITY FOOD<br>WITH BEST PRICES</h2>
+                    <h3>Love your Hunger</h3>
+                    <p>“Life is uncertain. Eat dessert first.”</p>
+                    <h4>$9.99</h4>
+                    <button type="button">Buy Now<img src="arrow.png"></button>
+
+                </div>
+                <div class="col-2">
+                    <img src="back.jpg" class="back">
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="add.png">
+                        <p><small>Add To Cart</small></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="social-links">
+                <img src="fb.png">
+                <img src="tw.png">
+                <img src="ig.png">
+
+            </div>
+    </div>
+
+    <script>
+        var menulist = document.getElementById("menulist");
+        
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu(){
+            
+            if( menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "130px"
+
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
